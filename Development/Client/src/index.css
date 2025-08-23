@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme{
+    
+    --animate-slideInUp:slideInUp 0.7s ease-out forwards;
+    --color-Verdigiris:rgb(8,153,159,1);
+
+    @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(85%); /* Start from below the container */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* End at its intended position */
+            }
+    }
+}
+
+@layer components{
+    .Button{
+        @apply w-[45%] max-w-[250px] border border-gray-300 rounded-lg p-1 text-center;
+    } 
+}
+
