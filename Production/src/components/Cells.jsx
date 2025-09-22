@@ -24,7 +24,7 @@ export const Cells=memo(function Cells({cache,submit,map}){
             num.textContent=`${localStorage.length}`;
         }
 
-        if(map.current.size==3){
+        if(map.current.size==192){
             submit(true);
         }
         else{
@@ -61,7 +61,7 @@ export const Cells=memo(function Cells({cache,submit,map}){
 
         }
 
-        if(map.current.size==3){
+        if(map.current.size==192){
             submit(true);
         }
         else{
@@ -115,7 +115,7 @@ export const Cells=memo(function Cells({cache,submit,map}){
             }
             arr.push(
                 
-                <input key={`${cache}${k++}`} type="text" id={id} name={id} placeholder={String.fromCodePoint(alpha)+row} defaultValue={val}
+                <input required key={`${cache}${k++}`} type="text" id={id} name={id} placeholder={String.fromCodePoint(alpha)+row} defaultValue={val}
                 className="aspect-[5/4] text-center border border-gray-300 rounded-lg"
                 style={{backgroundColor:val?'#5cb55c':'rgba(255, 255, 255, 0.3)'}}
                 onBlur={handleBlur} onFocus={handleFocus} onChange={handleChange}
