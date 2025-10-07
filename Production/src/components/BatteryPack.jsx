@@ -98,7 +98,7 @@ export function BatteryPack(){
             <div className="flex w-9/10 py-5 sticky top-0 left-0 bg-black">
                 <div className="flex flex-col items-center gap-4 w-1/2">
                     <div className="flex justify-evenly w-full">
-                        <input required name="Scan_Cell" type="text" className="Button" placeholder="Module ID" onBlur={test}></input>
+                        <input autoComplete="off" required name="Scan_Cell" type="text" className="Button" placeholder="Module ID" onBlur={test}></input>
                         <select required name="Cell_Makes" className="Button">
                             <option className="bg-gray-800">Ten Power</option>
                             <option className="bg-gray-800">BAK</option>
@@ -106,12 +106,12 @@ export function BatteryPack(){
                         </select>
                     </div>
                     <div className="flex justify-evenly w-full">
-                        <input required name="min_IR" type="text" className="Button" placeholder="min IR"></input>
-                        <input required name="max_IR" type="text" className="Button" placeholder="max IR"></input>
+                        <input autoComplete="off" required name="min_IR" type="text" className="Button" placeholder="min IR"></input>
+                        <input autoComplete="off" required name="max_IR" type="text" className="Button" placeholder="max IR"></input>
                     </div>
                     <div className="flex justify-evenly w-full">
-                        <input required name="min_Voltage" type="text" className="Button" placeholder="min Voltage"></input>
-                        <input required name="max_Voltage" type="text" className="Button" placeholder="max Voltage"></input>
+                        <input autoComplete="off" required name="min_Voltage" type="text" className="Button" placeholder="min Voltage"></input>
+                        <input autoComplete="off" required name="max_Voltage" type="text" className="Button" placeholder="max Voltage"></input>
                     </div>
                     
                 </div>
